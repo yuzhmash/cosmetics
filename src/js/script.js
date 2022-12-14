@@ -35,12 +35,72 @@ let zhopaka = 'вам есть';
 //   alert( 'Офис закрыт.' );
 // }
 
-let hour = 12;
-let isWeekend = true;
-let isVacation = false;
+// let hour = 12,
+// isWeekend = true,
+// isVacation = false;
 
-if (hour < 10 || hour > 18 || isVacation) {
-  alert( 'Офис закрыт.' ); // это выходной
-} else if (hour < 13 || hour > 2 || isWeekend) {
-  alert('заходи')
-}
+// if (hour < 10 || hour > 18) {
+//   console.log( 'Офис закрыт.' ); // это выходной
+// } else if (hour < 1 && hour > 2) {
+//   console.log('заходи')
+// } else {
+//   console.log('стоп')
+// }
+
+
+
+// let obey = 07
+
+
+
+
+// // let gaga = `va vad?`;
+
+// // console.log(gaga);
+
+// // gaga = 74;
+
+// // console.log(gaga);
+
+// // let vad = prompt('Сколько мне лет?', 89);
+// // console.log(vad);
+ 
+// let isChecked = true,
+// isClose = true;
+
+// // console.log(isChecked && isClose)
+
+// console.log(isChecked || isClose)
+
+// if (99-76 == 23+23) {
+//   console.log("true")
+// } else {
+//   console.log('false')
+// }
+
+// let vad = prompt('Сколько мне лет?', 51);
+// if (vad) {
+//   console.log("96")
+// } else {
+//   console.log("69")
+// };
+
+// for (let i = 1; i < 9; i++) {
+//   console.log(i)
+// }
+
+// function logging(a, b) {
+//   console.log( a - b)
+// }
+
+// logging(89, 67)
+
+
+
+
+$(document).ready(function(){
+  $('.carousel__sliders').slick({
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>'
+  });
+});
