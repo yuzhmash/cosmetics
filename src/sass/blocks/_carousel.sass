@@ -5,17 +5,41 @@
         width: 750px
         margin: 0 auto
     .slick-prev, .slick-next
+        border: none
         position: absolute
         top: 50%
         transform: translateY(-50%)
         left: -66px
-        border: none
         background-color: #fff
         z-index: 1
+        &:hover
+            cursor: pointer
         img
             width: 31px
             height: 50px
     .slick-next
         right: -66px
         left: auto
+ul
+    display: flex
+    justify-content: center
+    align-items: center
+
+li
+    list-style-type: none
+    margin: 6px
+
+button
+    font-size: 0
+    border-radius: 100%
+    width: 10px
+    height: 10px
+    background-color: rgba(119, 1, 1, .5)
+    border: none
+    transition: 0.5s all
+
+.slick-active
+    button
+        background-color: rgba(119, 1, 1, .9)
+    
 

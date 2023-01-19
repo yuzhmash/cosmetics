@@ -1,9 +1,31 @@
 @media  ( max-width: 575px )
+    .catalog
+        &__content
+            justify-content: center
+    .pageup
+        bottom: 40px
+        right: 40px
+    .catalog
+        &__tab
+            width: 134px
+            font-size: 13px
+    .reviews
+        padding: 0 0
+        &__block
+            flex-direction: column
+        &__title
+            text-align: center
+        &__subtitle
+            text-align: center
+        &__descr
+            text-align: center
+        &__img
+            margin: auto
     .header
         &__phone
             font-size: 14px
         &__official
-            width: 100%
+            width: 64%
     .pita
         font-size: 11px
         margin-top: 5px
@@ -41,11 +63,94 @@
             input
                 width: 222px
             button
-                width: 264px
+                width: 222px
+                font-size: 13px
         .title_left
             font-size: 26px
             text-align: center
         &__subtitle
             text-align: center
             font-size: 15px
-    
+    .carousel
+        &__sliders
+            max-width: 100%
+            img
+                width: 100%
+    .footer
+        &__info
+            width: 270px
+        &__address
+            font-size: 14px
+        &__number
+            font-size: 15px
+        &__social-item
+            border: none
+            i
+                font-size: 20px
+            &:hover
+                background-color: $cok
+                color: #E33A3A
+                
+@media  ( max-width: 768px )
+    .catalog
+        &__content
+            justify-content: space-around
+    .reviews
+        position: relative
+        &__block
+            flex-direction: column
+        &__title
+            left: 0
+        &__subtitle
+            left: 0
+        &__img
+            position: relative
+            left: -50%
+            transform: translateX(50%)
+            margin: auto
+    .consultation
+        &__subtitle
+            text-align: center
+    .title
+        &_left
+            text-align: center
+    .feed-form
+        margin: 36px auto
+    .desc
+        flex-direction: column
+        &__cup
+            margin-top: 50px
+    .carousel
+        &__sliders
+            max-width: 100%
+            img
+                width: 100%
+@media  ( max-width: 992px )
+    .promo
+        &__wrapper
+            margin: 90px 108px 0 50px
+    .header
+        &__official
+            font-size: 22px
+    .consultation
+        padding: 100px 108px 0 50px
+    .title
+        &_left
+            font-size: 27px
+    .carousel
+        &__sliders
+            max-width: 100%
+            img
+                width: 100%
+    .catalog
+        &__content
+            justify-content: space-around
+    .desc
+        &__desc
+            width: 259px
+@media  ( max-width: 1200px )
+    .promo
+        &__wrapper
+            margin: 90px 108px 0 50px
+    .consultation
+        padding: 100px 108px 0 50px

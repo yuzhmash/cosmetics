@@ -1,29 +1,142 @@
 .catalog
-    min-height: 500px
-    padding-top: 100px
-    .items
+    padding-bottom: 100px
+    &__tabs
+        margin-top: 70px
+        list-style-type: none
         display: flex
         justify-content: center
         align-items: center
-        &__fitnes
-            width: 222px
-            height: 52px
-            background: rgba(0, 0, 0, 0.0001)
-            border: 2px solid #D0D0D0
-            font-weight: 400
-            font-size: 18px
+        margin-bottom: 0
+        padding-left: 0
+    &__tab
+        border: 2px solid #D0D0D0
+        width: 220px
+        height: 50px
+        color: #6B6B6B
+        font-weight: 400
+        font-size: 18px
+        display: flex
+        align-items: center
+        justify-content: center
+        cursor: pointer
+        text-transform: uppercase
+        transform: skewX(-25deg)
+        margin: 0 5px
+        transition: 0.5s all
+        &:hover
+            box-shadow: 3px 3px 20px $cok
+            border: none
+        div
+            transform: skewX(25deg)
+        &_active
+            color: #fff 
+            background-color: $cok
+            border: none
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin-top: 60px
+    &-item
+        width: 300px
+        min-height: 440px 
+        border: 2px solid #E8E8E8
+        padding: 20px 20px 20px 20px
+        overflow: hidden
+        margin-bottom: 20px
+        hr
+            width: 263px
+            margin-top: 17px 
+            margin-bottom: 21px
+            background-color: #E8E8E8
+            border-bottom: none
+        &__img
+            max-width: 100%
+            height: 200px
+            display: block
+            margin: 0 auto
+        &__subtitle
+            text-align: center
+            font-weight: 700
+            font-size: 16px
+            margin-top: 20px
+        &__descr
+            text-align: center
+            color: #0D0D0D
+            font-weight: 300
+            font-size: 14px
+            line-height: 22px
+            margin-top: 15px
+        &__link
+            display: block
+            text-align: center
+            text-decoration-line: underline
+            color: $cok
+            font-weight: 500
+            font-size: 14px
+            margin-top: 10px
+        &__back
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(calc( -50% - 19px ))
+            display: block
+            color: $cok
+            font-size: 14px
+            font-weight: 500
+            text-decoration: undrerline
             text-transform: uppercase
-            color: #6B6B6B
-            transform: skew(-22deg)
-            margin: 46px 12px 38px 0
-            transition: 0.5s all
+        &__footer
             display: flex
-            justify-content: center
+            justify-content: space-around
             align-items: center
-            cursor: pointer
-            text-decoration: none
-            &:hover
-                background-color: #C70101
-                color: #fff
-                box-shadow: 0 0 23px rgba(0,0 ,0 ,0.7 )
-                border: none
+        &__old-price
+            text-decoration-line: line-through
+            color: #555555
+            font-weight: 300
+            font-size: 14px
+        &__new-price
+            color: #050505
+            font-weight: 700
+            font-size: 20px
+        &__wrapper
+            display: flex
+            width: calc( 200% + 40px )
+        &__content
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: 0.5s all
+            &_active
+                transform: translateX(0%)
+                margin-right: 20px
+        &__list
+            display: flex
+            flex-direction: column
+            position: relative
+            width: 50%
+            margin-left: 20px
+            transform: translateX(0%)
+            padding-right: 20px
+            transition: 0.5s all
+            padding-left: 19px
+            margin-bottom: 0px
+            list-style-type: none
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            li
+                position: relative
+                color: #555555
+                font-weight: 300
+                font-size: 14px
+                margin-bottom: 20px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 5px
+                    height: 5px
+                    background-color: #C70101
+                    left: -14px
+                    top: 7px
